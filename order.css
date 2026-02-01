@@ -1180,43 +1180,51 @@ body {
     .order-page {
         grid-template-columns: 1fr;
         padding: 100px 20px 40px;
+        display: block;
     }
     
     .price-calculator {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        max-width: 100%;
+        position: fixed !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        top: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
         border-radius: 20px 20px 0 0;
-        z-index: 100;
+        z-index: 1000;
         background: rgba(10, 10, 20, 0.98);
         backdrop-filter: blur(20px);
         padding: 1rem 1.5rem;
         box-sizing: border-box;
         border-top: 1px solid rgba(0, 212, 255, 0.3);
         box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.5);
+        margin: 0;
+        transform: none;
     }
     
     .calc-items {
-        max-height: 120px;
+        max-height: 100px;
         overflow-y: auto;
     }
     
     .calc-header {
-        margin-bottom: 0.75rem;
+        margin-bottom: 0.5rem;
         padding-bottom: 0.5rem;
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
     
     .calc-total {
-        margin-top: 0.75rem;
-        padding-top: 0.75rem;
+        margin-top: 0.5rem;
+        padding-top: 0.5rem;
     }
     
     .order-container {
-        margin-bottom: 220px;
+        margin-bottom: 200px;
+    }
+    
+    .order-header {
+        margin-bottom: 20px;
     }
 }
 
