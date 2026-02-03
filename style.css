@@ -1127,6 +1127,44 @@ footer::before {
     color: #00d4ff;
 }
 
+.trustpilot-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, rgba(0, 182, 122, 0.15), rgba(0, 182, 122, 0.05));
+    border: 1px solid rgba(0, 182, 122, 0.3);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    color: #00b67a;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.trustpilot-badge:hover {
+    background: linear-gradient(135deg, rgba(0, 182, 122, 0.25), rgba(0, 182, 122, 0.1));
+    border-color: rgba(0, 182, 122, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 182, 122, 0.2);
+}
+
+.trustpilot-badge svg {
+    width: 18px;
+    height: 18px;
+    stroke: #00b67a;
+    fill: rgba(0, 182, 122, 0.3);
+}
+
+.trustpilot-badge span {
+    color: #aaa;
+}
+
+.trustpilot-badge strong {
+    color: #00b67a;
+    font-weight: 600;
+}
+
 .copyright {
     color: #444;
     font-size: 0.85rem;
