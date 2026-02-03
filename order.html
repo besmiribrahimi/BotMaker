@@ -3,7 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Configure and order your custom Discord bot. Choose features, add-ons, and get started with your perfect bot today.">
+    <meta name="theme-color" content="#00d4ff">
+    
+    <!-- Open Graph / Discord Embed -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bot-maker-two.vercel.app/order.html">
+    <meta property="og:title" content="Order Your Bot - BotMaker">
+    <meta property="og:description" content="🛒 Configure your perfect Discord bot. Choose from preset plans or build a custom bot with the features you need!">
+    <meta property="og:image" content="https://bot-maker-two.vercel.app/embed-image.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Order Your Bot - BotMaker">
+    <meta name="twitter:description" content="🛒 Configure your perfect Discord bot with the features you need!">
+    <meta name="twitter:image" content="https://bot-maker-two.vercel.app/embed-image.svg">
+    
     <title>Configure Your Bot - BotMaker</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -187,7 +206,7 @@
                         </div>
                         <h3>Multipurpose Bot</h3>
                         <p>All-in-one solution with everything</p>
-                        <span class="type-price popular">From €80</span>
+                        <span class="type-price popular">€100</span>
                     </div>
                     
                     <div class="bot-type-card" data-type="giveaway">
@@ -199,6 +218,78 @@
                         <h3>Giveaway Bot</h3>
                         <p>Giveaways, drops, requirements</p>
                         <span class="type-price">From €20</span>
+                    </div>
+                    
+                    <div class="bot-type-card roblox-integration" data-type="roblox-discord">
+                        <div class="type-icon roblox-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                <polyline points="7.5 4.21 12 6.81 16.5 4.21"/>
+                                <polyline points="7.5 19.79 7.5 14.6 3 12"/>
+                                <polyline points="21 12 16.5 14.6 16.5 19.79"/>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                                <line x1="12" y1="22.08" x2="12" y2="12"/>
+                            </svg>
+                        </div>
+                        <div class="integration-badge">API Service</div>
+                        <h3>Roblox ↔ Discord</h3>
+                        <p>Full game-to-Discord integration</p>
+                        <span class="type-price roblox-price">From €27</span>
+                    </div>
+                    
+                    <div class="bot-type-card twitch-integration" data-type="twitch-discord">
+                        <div class="type-icon twitch-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 2H3v16h5v4l4-4h5l4-4V2zM11 11V7M16 11V7"/>
+                            </svg>
+                        </div>
+                        <div class="integration-badge twitch-badge">API Service</div>
+                        <h3>Twitch ↔ Discord</h3>
+                        <p>Stream alerts & role sync</p>
+                        <span class="type-price twitch-price">From €27</span>
+                    </div>
+                    
+                    <div class="bot-type-card youtube-integration" data-type="youtube-discord">
+                        <div class="type-icon youtube-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                            </svg>
+                        </div>
+                        <div class="integration-badge youtube-badge">API Service</div>
+                        <h3>YouTube ↔ Discord</h3>
+                        <p>Upload alerts & sub roles</p>
+                        <span class="type-price youtube-price">From €27</span>
+                    </div>
+                    
+                    <div class="bot-type-card minecraft-integration" data-type="minecraft-discord">
+                        <div class="type-icon minecraft-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <rect x="7" y="7" width="3" height="3"/>
+                                <rect x="14" y="7" width="3" height="3"/>
+                                <rect x="7" y="14" width="10" height="3"/>
+                            </svg>
+                        </div>
+                        <div class="integration-badge minecraft-badge">API Service</div>
+                        <h3>Minecraft ↔ Discord</h3>
+                        <p>Server sync & chat bridge</p>
+                        <span class="type-price minecraft-price">From €27</span>
+                    </div>
+                    
+                    <div class="bot-type-card dashboard-integration" data-type="web-dashboard">
+                        <div class="type-icon dashboard-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="7" height="7"/>
+                                <rect x="14" y="3" width="7" height="7"/>
+                                <rect x="14" y="14" width="7" height="7"/>
+                                <rect x="3" y="14" width="7" height="7"/>
+                            </svg>
+                        </div>
+                        <div class="integration-badge dashboard-badge">Web Panel</div>
+                        <h3>Web Dashboard</h3>
+                        <p>Control panel for your bot</p>
+                        <span class="type-price dashboard-price">From €20</span>
                     </div>
                     
                     <div class="bot-type-card" data-type="custom">
@@ -470,8 +561,8 @@
                         <div class="addon-check"></div>
                     </div>
                     
-                    <div class="addon-card" data-addon="api" data-price="35">
-                        <div class="addon-icon">
+                    <div class="addon-card api-addon" data-addon="api" data-price="0">
+                        <div class="addon-icon api-addon-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="16 18 22 12 16 6"/>
                                 <polyline points="8 6 2 12 8 18"/>
@@ -481,7 +572,8 @@
                             <h3>Custom API</h3>
                             <p>REST API for external integrations</p>
                         </div>
-                        <span class="addon-price">+€35</span>
+                        <span class="addon-price">Select Type →</span>
+                        <span class="addon-info-btn">ℹ️</span>
                         <div class="addon-check"></div>
                     </div>
                     
@@ -605,6 +697,11 @@
                     </div>
                     
                     <div class="form-group">
+                        <label for="memberCount">Server Member Count *</label>
+                        <input type="number" id="memberCount" placeholder="e.g. 500" min="1" required>
+                    </div>
+                    
+                    <div class="form-group">
                         <label>Willing to voice call to discuss?</label>
                         <div class="radio-group">
                             <label class="radio-option">
@@ -675,6 +772,625 @@
             </div>
         </div>
     </main>
+
+    <!-- Preset Plan Details Modal -->
+    <div class="modal-overlay" id="presetModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-header">
+                <div class="modal-badge" id="modalBadge">Plan</div>
+                <h2 id="modalTitle">Plan Name</h2>
+                <p class="modal-interactions" id="modalInteractions">Interactions</p>
+                <div class="modal-price">
+                    <span class="modal-base-price" id="modalBasePrice">€0</span>
+                    <span class="modal-monthly" id="modalMonthly">+ €0/mo hosting</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h3>✨ What's Included:</h3>
+                <ul class="modal-features" id="modalFeatures">
+                </ul>
+                <div class="modal-note">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 16v-4M12 8h.01"/>
+                    </svg>
+                    <p>Preset plans come pre-configured with optimized settings. You'll skip the features page and go directly to add-ons.</p>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="modal-btn modal-btn-cancel" id="modalCancel">Cancel</button>
+                <button class="modal-btn modal-btn-confirm" id="modalConfirm">Select This Plan</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Roblox-Discord Integration Modal -->
+    <div class="modal-overlay" id="robloxModal">
+        <div class="modal-content roblox-modal">
+            <button class="modal-close" id="robloxModalClose">&times;</button>
+            <div class="modal-header roblox-header">
+                <div class="roblox-logos">
+                    <span class="roblox-logo">🎮</span>
+                    <span class="connection-arrow">↔</span>
+                    <span class="discord-logo">💬</span>
+                </div>
+                <h2>Roblox ↔ Discord Integration</h2>
+                <p class="modal-interactions">Full Game-to-Discord Communication Service</p>
+            </div>
+            <div class="modal-body">
+                <div class="roblox-description">
+                    <p>We provide <strong>full integration</strong> between your Roblox game and Discord server using a custom Discord bot and secure backend system. This allows real-time sync between in-game actions and Discord features.</p>
+                </div>
+
+                <h3>⚙️ What's Included:</h3>
+                <ul class="modal-features roblox-features">
+                    <li>Roblox → Discord real-time communication</li>
+                    <li>Secure API bridge (VPS hosted)</li>
+                    <li>Custom Discord bot integration</li>
+                    <li>Authentication & protection (no token leaks)</li>
+                    <li>Scalable & optimized setup</li>
+                </ul>
+
+                <h3>🚀 Features You Can Add:</h3>
+                <ul class="modal-features roblox-features">
+                    <li>🎮 In-game actions → Discord roles</li>
+                    <li>🔐 Roblox account verification system</li>
+                    <li>📊 Game stats synced to Discord</li>
+                    <li>🔔 Join / win / ban logs</li>
+                    <li>🛂 Whitelist & permission systems</li>
+                    <li>🧠 Admin controls via Discord commands or dashboard</li>
+                </ul>
+
+                <h3>🧩 How It Works:</h3>
+                <div class="how-it-works">
+                    <div class="work-step">
+                        <span class="step-num">1</span>
+                        <p>Roblox game sends events (secure HTTP)</p>
+                    </div>
+                    <div class="work-step">
+                        <span class="step-num">2</span>
+                        <p>Backend validates & processes data</p>
+                    </div>
+                    <div class="work-step">
+                        <span class="step-num">3</span>
+                        <p>Discord bot executes actions (roles, logs, stats)</p>
+                    </div>
+                </div>
+
+                <h3>💼 Select Your Tier:</h3>
+                <div class="pricing-tiers selectable-tiers" id="robloxTiers">
+                    <div class="tier selectable" data-tier="standard" data-price="27">
+                        <input type="radio" name="roblox-tier" value="standard" id="roblox-standard">
+                        <label for="roblox-standard">
+                            <span class="tier-name">Standard</span>
+                            <span class="tier-price">€27</span>
+                            <p>Role sync + logs + verification</p>
+                        </label>
+                    </div>
+                    <div class="tier selectable tier-premium" data-tier="premium" data-price="55">
+                        <input type="radio" name="roblox-tier" value="premium" id="roblox-premium">
+                        <label for="roblox-premium">
+                            <span class="tier-name">Premium</span>
+                            <span class="tier-price">€55</span>
+                            <p>Full system + dashboard + MongoDB</p>
+                        </label>
+                    </div>
+                </div>
+
+                <h3>🔒 Security Guaranteed:</h3>
+                <ul class="modal-features security-features">
+                    <li>No Discord tokens in Roblox</li>
+                    <li>Encrypted requests</li>
+                    <li>Rate-limited API</li>
+                    <li>Owner-only access</li>
+                </ul>
+
+                <div class="modal-note requirements-note">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 16v-4M12 8h.01"/>
+                    </svg>
+                    <div>
+                        <strong>Requirements from You:</strong>
+                        <ul>
+                            <li>You must own the Roblox game</li>
+                            <li>You must own the Discord server</li>
+                            <li>Bot hosting (or we can provide it)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="modal-btn modal-btn-cancel" id="robloxModalCancel">Cancel</button>
+                <button class="modal-btn modal-btn-confirm roblox-confirm" id="robloxModalConfirm">Select & Configure</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Twitch-Discord Integration Modal -->
+    <div class="modal-overlay" id="twitchModal">
+        <div class="modal-content twitch-modal">
+            <button class="modal-close" id="twitchModalClose">&times;</button>
+            <div class="modal-header twitch-header">
+                <div class="roblox-logos">
+                    <span class="roblox-logo">📺</span>
+                    <span class="connection-arrow">↔</span>
+                    <span class="discord-logo">💬</span>
+                </div>
+                <h2>Twitch ↔ Discord Integration</h2>
+                <p class="modal-interactions">Stream Alerts & Community Sync</p>
+            </div>
+            <div class="modal-body">
+                <div class="roblox-description">
+                    <p>Connect your <strong>Twitch channel</strong> to your Discord server! Get live notifications, automatic role assignments for subscribers, and keep your community engaged across both platforms.</p>
+                </div>
+
+                <h3>⚙️ What's Included:</h3>
+                <ul class="modal-features twitch-features">
+                    <li>Twitch API integration</li>
+                    <li>Real-time stream notifications</li>
+                    <li>Custom Discord bot</li>
+                    <li>Webhook-based alerts</li>
+                    <li>Secure token management</li>
+                </ul>
+
+                <h3>🚀 Features You Can Add:</h3>
+                <ul class="modal-features twitch-features">
+                    <li>📺 Go-live alerts with custom embeds</li>
+                    <li>🎭 Auto-roles for Twitch subs</li>
+                    <li>📊 Stream stats & viewer tracking</li>
+                    <li>💬 Twitch chat ↔ Discord bridge</li>
+                    <li>🏆 Sub/follower milestone alerts</li>
+                    <li>🎬 Clip notifications</li>
+                </ul>
+
+                <h3>💼 Select Your Tier:</h3>
+                <div class="pricing-tiers selectable-tiers" id="twitchTiers">
+                    <div class="tier selectable" data-tier="standard" data-price="27">
+                        <input type="radio" name="twitch-tier" value="standard" id="twitch-standard">
+                        <label for="twitch-standard">
+                            <span class="tier-name">Standard</span>
+                            <span class="tier-price">€27</span>
+                            <p>Go-live alerts + sub roles + stats</p>
+                        </label>
+                    </div>
+                    <div class="tier selectable tier-twitch" data-tier="premium" data-price="55">
+                        <input type="radio" name="twitch-tier" value="premium" id="twitch-premium">
+                        <label for="twitch-premium">
+                            <span class="tier-name">Premium</span>
+                            <span class="tier-price">€55</span>
+                            <p>Full system + chat bridge</p>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="modal-note twitch-note">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 16v-4M12 8h.01"/>
+                    </svg>
+                    <div>
+                        <strong>Requirements:</strong>
+                        <ul>
+                            <li>Twitch Affiliate/Partner account</li>
+                            <li>Discord server ownership</li>
+                            <li>Bot hosting (or we provide it)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="modal-btn modal-btn-cancel" id="twitchModalCancel">Cancel</button>
+                <button class="modal-btn modal-btn-confirm twitch-confirm" id="twitchModalConfirm">Select & Configure</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- YouTube-Discord Integration Modal -->
+    <div class="modal-overlay" id="youtubeModal">
+        <div class="modal-content youtube-modal">
+            <button class="modal-close" id="youtubeModalClose">&times;</button>
+            <div class="modal-header youtube-header">
+                <div class="roblox-logos">
+                    <span class="roblox-logo">▶️</span>
+                    <span class="connection-arrow">↔</span>
+                    <span class="discord-logo">💬</span>
+                </div>
+                <h2>YouTube ↔ Discord Integration</h2>
+                <p class="modal-interactions">Video Alerts & Subscriber Sync</p>
+            </div>
+            <div class="modal-body">
+                <div class="roblox-description">
+                    <p>Keep your Discord community updated with your <strong>YouTube content</strong>! Automatic upload notifications, member roles for subscribers, and engagement tracking all in one system.</p>
+                </div>
+
+                <h3>⚙️ What's Included:</h3>
+                <ul class="modal-features youtube-features">
+                    <li>YouTube Data API integration</li>
+                    <li>RSS feed monitoring</li>
+                    <li>Custom Discord bot</li>
+                    <li>Automated notifications</li>
+                    <li>OAuth2 authentication</li>
+                </ul>
+
+                <h3>🚀 Features You Can Add:</h3>
+                <ul class="modal-features youtube-features">
+                    <li>🔔 New video/short upload alerts</li>
+                    <li>🎭 Member roles for YT subscribers</li>
+                    <li>📊 Channel stats dashboard</li>
+                    <li>🔴 Premiere & livestream alerts</li>
+                    <li>📈 Milestone celebrations</li>
+                    <li>💬 Comment notifications</li>
+                </ul>
+
+                <h3>💼 Select Your Tier:</h3>
+                <div class="pricing-tiers selectable-tiers" id="youtubeTiers">
+                    <div class="tier selectable" data-tier="standard" data-price="27">
+                        <input type="radio" name="youtube-tier" value="standard" id="youtube-standard">
+                        <label for="youtube-standard">
+                            <span class="tier-name">Standard</span>
+                            <span class="tier-price">€27</span>
+                            <p>Upload alerts + member roles + stats</p>
+                        </label>
+                    </div>
+                    <div class="tier selectable tier-youtube" data-tier="premium" data-price="55">
+                        <input type="radio" name="youtube-tier" value="premium" id="youtube-premium">
+                        <label for="youtube-premium">
+                            <span class="tier-name">Premium</span>
+                            <span class="tier-price">€55</span>
+                            <p>Full system + dashboard</p>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="modal-note youtube-note">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 16v-4M12 8h.01"/>
+                    </svg>
+                    <div>
+                        <strong>Requirements:</strong>
+                        <ul>
+                            <li>YouTube channel ownership</li>
+                            <li>Discord server ownership</li>
+                            <li>Google API access</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="modal-btn modal-btn-cancel" id="youtubeModalCancel">Cancel</button>
+                <button class="modal-btn modal-btn-confirm youtube-confirm" id="youtubeModalConfirm">Select & Configure</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Minecraft-Discord Integration Modal -->
+    <div class="modal-overlay" id="minecraftModal">
+        <div class="modal-content minecraft-modal">
+            <button class="modal-close" id="minecraftModalClose">&times;</button>
+            <div class="modal-header minecraft-header">
+                <div class="roblox-logos">
+                    <span class="roblox-logo">⛏️</span>
+                    <span class="connection-arrow">↔</span>
+                    <span class="discord-logo">💬</span>
+                </div>
+                <h2>Minecraft ↔ Discord Integration</h2>
+                <p class="modal-interactions">Server Sync & Chat Bridge</p>
+            </div>
+            <div class="modal-body">
+                <div class="roblox-description">
+                    <p>Bridge your <strong>Minecraft server</strong> with Discord! Real-time chat sync, server status, player management, and whitelist controls all from your Discord server.</p>
+                </div>
+
+                <h3>⚙️ What's Included:</h3>
+                <ul class="modal-features minecraft-features">
+                    <li>Minecraft plugin/mod integration</li>
+                    <li>Discord bot with RCON support</li>
+                    <li>Real-time data sync</li>
+                    <li>Secure server communication</li>
+                    <li>Multi-server support available</li>
+                </ul>
+
+                <h3>🚀 Features You Can Add:</h3>
+                <ul class="modal-features minecraft-features">
+                    <li>💬 In-game ↔ Discord chat sync</li>
+                    <li>📊 Server status & player count</li>
+                    <li>🛂 Whitelist management via Discord</li>
+                    <li>🔔 Join/leave/death notifications</li>
+                    <li>🏆 Achievement announcements</li>
+                    <li>⚙️ Admin commands from Discord</li>
+                </ul>
+
+                <h3>💼 Select Your Tier:</h3>
+                <div class="pricing-tiers selectable-tiers" id="minecraftTiers">
+                    <div class="tier selectable" data-tier="standard" data-price="27">
+                        <input type="radio" name="minecraft-tier" value="standard" id="minecraft-standard">
+                        <label for="minecraft-standard">
+                            <span class="tier-name">Standard</span>
+                            <span class="tier-price">€27</span>
+                            <p>Chat bridge + status + whitelist</p>
+                        </label>
+                    </div>
+                    <div class="tier selectable tier-minecraft" data-tier="premium" data-price="55">
+                        <input type="radio" name="minecraft-tier" value="premium" id="minecraft-premium">
+                        <label for="minecraft-premium">
+                            <span class="tier-name">Premium</span>
+                            <span class="tier-price">€55</span>
+                            <p>Full system + admin panel</p>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="modal-note minecraft-note">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 16v-4M12 8h.01"/>
+                    </svg>
+                    <div>
+                        <strong>Requirements:</strong>
+                        <ul>
+                            <li>Minecraft server (Java/Bedrock)</li>
+                            <li>Server access (FTP/Panel)</li>
+                            <li>Discord server ownership</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="modal-btn modal-btn-cancel" id="minecraftModalCancel">Cancel</button>
+                <button class="modal-btn modal-btn-confirm minecraft-confirm" id="minecraftModalConfirm">Select & Configure</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Web Dashboard Integration Modal -->
+    <div class="modal-overlay" id="dashboardModal">
+        <div class="modal-content dashboard-modal">
+            <button class="modal-close" id="dashboardModalClose">&times;</button>
+            <div class="modal-header dashboard-header">
+                <div class="roblox-logos">
+                    <span class="roblox-logo">🌐</span>
+                    <span class="connection-arrow">↔</span>
+                    <span class="discord-logo">💬</span>
+                </div>
+                <h2>Web Dashboard</h2>
+                <p class="modal-interactions">Full Control Panel for Your Bot</p>
+            </div>
+            <div class="modal-body">
+                <div class="roblox-description">
+                    <p>Get a beautiful <strong>web dashboard</strong> to control your Discord bot! Manage settings, view analytics, configure features, and more - all from an easy-to-use interface.</p>
+                </div>
+
+                <h3>⚙️ What's Included:</h3>
+                <ul class="modal-features dashboard-features">
+                    <li>Custom web application</li>
+                    <li>Discord OAuth2 login</li>
+                    <li>Responsive design (mobile-friendly)</li>
+                    <li>Secure API backend</li>
+                    <li>Database integration</li>
+                </ul>
+
+                <h3>🚀 Features You Can Add:</h3>
+                <ul class="modal-features dashboard-features">
+                    <li>⚙️ Bot settings configuration</li>
+                    <li>📊 Server analytics & stats</li>
+                    <li>👥 Member management</li>
+                    <li>📝 Custom commands editor</li>
+                    <li>🔔 Notification settings</li>
+                    <li>🎨 Embed builder</li>
+                </ul>
+
+                <h3>💼 Select Your Tier:</h3>
+                <div class="pricing-tiers selectable-tiers" id="dashboardTiers">
+                    <div class="tier selectable" data-tier="standard" data-price="20">
+                        <input type="radio" name="dashboard-tier" value="standard" id="dashboard-standard">
+                        <label for="dashboard-standard">
+                            <span class="tier-name">Standard</span>
+                            <span class="tier-price">€20</span>
+                            <p>Settings + stats + analytics</p>
+                        </label>
+                    </div>
+                    <div class="tier selectable tier-dashboard" data-tier="premium" data-price="45">
+                        <input type="radio" name="dashboard-tier" value="premium" id="dashboard-premium">
+                        <label for="dashboard-premium">
+                            <span class="tier-name">Premium</span>
+                            <span class="tier-price">€45</span>
+                            <p>Full dashboard + custom domain</p>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="modal-note dashboard-note">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 16v-4M12 8h.01"/>
+                    </svg>
+                    <div>
+                        <strong>Requirements:</strong>
+                        <ul>
+                            <li>Existing Discord bot (or order one)</li>
+                            <li>Hosting (or we provide it)</li>
+                            <li>Domain (optional, we can help)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="modal-btn modal-btn-cancel" id="dashboardModalCancel">Cancel</button>
+                <button class="modal-btn modal-btn-confirm dashboard-confirm" id="dashboardModalConfirm">Select & Configure</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom API Add-on Info Modal -->
+    <div class="modal-overlay" id="apiAddonModal">
+        <div class="modal-content api-addon-modal">
+            <button class="modal-close" id="apiAddonModalClose">&times;</button>
+            <div class="modal-header api-addon-header">
+                <div class="roblox-logos">
+                    <span class="roblox-logo">⚡</span>
+                    <span class="connection-arrow">↔</span>
+                    <span class="discord-logo">🌐</span>
+                </div>
+                <h2>Custom API Integration</h2>
+                <p class="modal-interactions">Connect Your Bot to External Services</p>
+            </div>
+            <div class="modal-body">
+                <div class="roblox-description">
+                    <p>Get a <strong>secure REST API</strong> that allows your bot to communicate with external services, websites, games, and applications. Perfect for advanced integrations!</p>
+                </div>
+
+                <h3>⚙️ What's Included:</h3>
+                <ul class="modal-features api-addon-features">
+                    <li>Custom REST API endpoints</li>
+                    <li>Secure authentication (API keys)</li>
+                    <li>Rate limiting & DDoS protection</li>
+                    <li>JSON request/response format</li>
+                    <li>Full documentation provided</li>
+                </ul>
+
+                <h3>🚀 What You Can Do:</h3>
+                <ul class="modal-features api-addon-features">
+                    <li>🎮 Connect Roblox/Minecraft/Games</li>
+                    <li>🌐 Integrate with your website</li>
+                    <li>📊 Send/receive data in real-time</li>
+                    <li>🔔 Trigger Discord actions externally</li>
+                    <li>👥 Manage roles & permissions via API</li>
+                    <li>📈 Sync stats & leaderboards</li>
+                </ul>
+
+                <h3>🧩 How It Works:</h3>
+                <div class="how-it-works">
+                    <div class="work-step">
+                        <span class="step-num">1</span>
+                        <p>Your service sends HTTP request to API</p>
+                    </div>
+                    <div class="work-step">
+                        <span class="step-num">2</span>
+                        <p>API validates & processes the request</p>
+                    </div>
+                    <div class="work-step">
+                        <span class="step-num">3</span>
+                        <p>Discord bot executes the action</p>
+                    </div>
+                </div>
+
+                <h3>💡 Example Use Cases:</h3>
+                <div class="api-examples">
+                    <div class="api-example">
+                        <span class="example-icon">🎮</span>
+                        <div>
+                            <strong>Game Integration</strong>
+                            <p>In-game purchases → Discord role</p>
+                        </div>
+                    </div>
+                    <div class="api-example">
+                        <span class="example-icon">🛒</span>
+                        <div>
+                            <strong>E-commerce</strong>
+                            <p>Website purchase → Support access</p>
+                        </div>
+                    </div>
+                    <div class="api-example">
+                        <span class="example-icon">📊</span>
+                        <div>
+                            <strong>Stats Sync</strong>
+                            <p>External leaderboards → Discord</p>
+                        </div>
+                    </div>
+                    <div class="api-example">
+                        <span class="example-icon">🔐</span>
+                        <div>
+                            <strong>Verification</strong>
+                            <p>Website login → Discord verification</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>🔒 Security Features:</h3>
+                <ul class="modal-features security-features">
+                    <li>API key authentication</li>
+                    <li>IP whitelist option</li>
+                    <li>Encrypted HTTPS requests</li>
+                    <li>Request logging & monitoring</li>
+                </ul>
+
+                <h3>🎯 Select Your API Type:</h3>
+                <div class="api-type-selector" id="apiTypeSelector">
+                    <div class="api-type-option" data-api-type="roblox" data-price="27">
+                        <input type="radio" name="api-type" value="roblox" id="api-roblox">
+                        <label for="api-roblox">
+                            <span class="api-type-icon">🎮</span>
+                            <span class="api-type-name">Roblox API</span>
+                            <span class="api-type-price">€27</span>
+                        </label>
+                    </div>
+                    <div class="api-type-option" data-api-type="youtube" data-price="27">
+                        <input type="radio" name="api-type" value="youtube" id="api-youtube">
+                        <label for="api-youtube">
+                            <span class="api-type-icon">▶️</span>
+                            <span class="api-type-name">YouTube API</span>
+                            <span class="api-type-price">€27</span>
+                        </label>
+                    </div>
+                    <div class="api-type-option" data-api-type="twitch" data-price="27">
+                        <input type="radio" name="api-type" value="twitch" id="api-twitch">
+                        <label for="api-twitch">
+                            <span class="api-type-icon">📺</span>
+                            <span class="api-type-name">Twitch API</span>
+                            <span class="api-type-price">€27</span>
+                        </label>
+                    </div>
+                    <div class="api-type-option" data-api-type="minecraft" data-price="27">
+                        <input type="radio" name="api-type" value="minecraft" id="api-minecraft">
+                        <label for="api-minecraft">
+                            <span class="api-type-icon">⛏️</span>
+                            <span class="api-type-name">Minecraft API</span>
+                            <span class="api-type-price">€27</span>
+                        </label>
+                    </div>
+                    <div class="api-type-option" data-api-type="website" data-price="20">
+                        <input type="radio" name="api-type" value="website" id="api-website">
+                        <label for="api-website">
+                            <span class="api-type-icon">🌐</span>
+                            <span class="api-type-name">Website API</span>
+                            <span class="api-type-price">€20</span>
+                        </label>
+                    </div>
+                    <div class="api-type-option" data-api-type="custom" data-price="27">
+                        <input type="radio" name="api-type" value="custom" id="api-custom">
+                        <label for="api-custom">
+                            <span class="api-type-icon">⚡</span>
+                            <span class="api-type-name">Custom API</span>
+                            <span class="api-type-price">€27</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="modal-note api-addon-note">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 16v-4M12 8h.01"/>
+                    </svg>
+                    <div>
+                        <strong>What You'll Receive:</strong>
+                        <ul>
+                            <li>API endpoint URL</li>
+                            <li>API key & secret</li>
+                            <li>Full documentation</li>
+                            <li>Example code snippets</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="modal-btn modal-btn-cancel" id="apiAddonModalClose2">Close</button>
+                <button class="modal-btn modal-btn-confirm api-addon-confirm" id="apiAddonModalConfirm">Select an API Type</button>
+            </div>
+        </div>
+    </div>
 
     <script src="order.js"></script>
 </body>

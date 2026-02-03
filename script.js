@@ -17,8 +17,8 @@ async function sendToDiscord(embed) {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                username: 'BotMaker Orders',
-                avatar_url: 'https://i.imgur.com/AfFp7pu.png',
+                username: 'loriku po therret',
+                avatar_url: 'https://imgur.com/gallery/things-to-glance-then-move-on-with-life-ccFC9oK#/t/images',
                 embeds: [embed]
             })
         });
@@ -26,7 +26,7 @@ async function sendToDiscord(embed) {
         if (response.ok) {
             return true;
         } else {
-            console.error('Discord webhook error:', response.status);
+            console.error('failed please contact in discord;dx.nzaaa error:', response.status);
             return false;
         }
     } catch (error) {
