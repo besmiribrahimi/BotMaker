@@ -344,6 +344,83 @@ header p {
     font-weight: 500;
 }
 
+/* ===== TRUSTPILOT BADGE ===== */
+.trustpilot-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(135deg, rgba(0, 182, 122, 0.15), rgba(0, 182, 122, 0.05));
+    border: 2px solid rgba(0, 182, 122, 0.4);
+    border-radius: 16px;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: fadeInUp 0.8s ease 1s both, trustpilotPulse 3s ease-in-out infinite;
+    box-shadow: 0 4px 20px rgba(0, 182, 122, 0.2);
+}
+
+.trustpilot-badge:hover {
+    transform: translateY(-5px) scale(1.02);
+    background: linear-gradient(135deg, rgba(0, 182, 122, 0.25), rgba(0, 182, 122, 0.1));
+    border-color: rgba(0, 182, 122, 0.7);
+    box-shadow: 0 10px 40px rgba(0, 182, 122, 0.4);
+}
+
+.trustpilot-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #00b67a;
+    border-radius: 10px;
+    color: white;
+}
+
+.trustpilot-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.trustpilot-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.trustpilot-text {
+    font-size: 0.85rem;
+    color: #888;
+    font-weight: 500;
+}
+
+.trustpilot-brand {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #00b67a;
+}
+
+.trustpilot-stars {
+    display: flex;
+    gap: 2px;
+}
+
+.trustpilot-stars svg {
+    width: 20px;
+    height: 20px;
+    filter: drop-shadow(0 0 4px rgba(0, 182, 122, 0.5));
+}
+
+@keyframes trustpilotPulse {
+    0%, 100% {
+        box-shadow: 0 4px 20px rgba(0, 182, 122, 0.2);
+    }
+    50% {
+        box-shadow: 0 4px 30px rgba(0, 182, 122, 0.4);
+    }
+}
+
 /* ===== ANIMATIONS ===== */
 @keyframes fadeInDown {
     from { opacity: 0; transform: translateY(-20px); }
@@ -1781,6 +1858,17 @@ footer::before {
     
     .stat-number {
         font-size: 2rem;
+    }
+    
+    .trustpilot-badge {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .trustpilot-content {
+        text-align: center;
     }
     
     section {

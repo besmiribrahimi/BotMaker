@@ -2626,10 +2626,15 @@ body {
     cursor: pointer;
 }
 
-.api-type-option input[type="radio"] {
+.api-type-option input[type="checkbox"] {
     position: absolute;
     opacity: 0;
-    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .api-type-option label {
@@ -2644,6 +2649,7 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     text-align: center;
+    pointer-events: none;
 }
 
 .api-type-option label:hover {

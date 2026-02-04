@@ -737,17 +737,22 @@ function showApiAddonModal() {
 }
 
 function updateApiModalButton() {
-    const selectedApiType = document.querySelector('input[name="api-type"]:checked');
+    const selectedApiTypes = document.querySelectorAll('input[name="api-type"]:checked');
+    const hasExistingApis = orderData.addons.some(a => a.name === 'api');
     
-    if (apiAddonCard && apiAddonCard.classList.contains('selected')) {
-        apiAddonModalConfirm.textContent = 'Remove from Order';
-        apiAddonModalConfirm.classList.add('remove-mode');
-    } else if (selectedApiType) {
-        const price = selectedApiType.closest('.api-type-option').dataset.price;
-        apiAddonModalConfirm.textContent = `Add to Order (+€${price})`;
+    if (selectedApiTypes.length > 0) {
+        let totalPrice = 0;
+        selectedApiTypes.forEach(checkbox => {
+            totalPrice += parseInt(checkbox.closest('.api-type-option').dataset.price);
+        });
+        const count = selectedApiTypes.length;
+        apiAddonModalConfirm.textContent = `Add ${count} API${count > 1 ? 's' : ''} to Order (+€${totalPrice})`;
         apiAddonModalConfirm.classList.remove('remove-mode');
+    } else if (hasExistingApis) {
+        apiAddonModalConfirm.textContent = 'Remove All APIs from Order';
+        apiAddonModalConfirm.classList.add('remove-mode');
     } else {
-        apiAddonModalConfirm.textContent = 'Select an API Type';
+        apiAddonModalConfirm.textContent = 'Select API Type(s)';
         apiAddonModalConfirm.classList.remove('remove-mode');
     }
 }
@@ -775,32 +780,21 @@ if (apiAddonInfoBtn) {
 }
 
 // API type selection change - update button
-document.querySelectorAll('input[name="api-type"]').forEach(radio => {
-    radio.addEventListener('change', updateApiModalButton);
-});
-
-// Click on API type option to select it
-document.querySelectorAll('.api-type-option').forEach(option => {
-    option.addEventListener('click', () => {
-        const radio = option.querySelector('input[type="radio"]');
-        if (radio) {
-            radio.checked = true;
-            updateApiModalButton();
-        }
-    });
+document.querySelectorAll('input[name="api-type"]').forEach(checkbox => {
+    checkbox.addEventListener('change', updateApiModalButton);
 });
 
 // Confirm button in modal - add/remove addon
 if (apiAddonModalConfirm) {
     apiAddonModalConfirm.addEventListener('click', () => {
         if (apiAddonCard) {
-            // If already selected, remove it
-            if (apiAddonCard.classList.contains('selected')) {
+            const selectedApiTypes = document.querySelectorAll('input[name="api-type"]:checked');
+            const hasExistingApis = orderData.addons.some(a => a.name === 'api');
+            
+            // If no checkboxes selected and we have existing APIs, remove them all
+            if (selectedApiTypes.length === 0 && hasExistingApis) {
                 apiAddonCard.classList.remove('selected');
                 orderData.addons = orderData.addons.filter(a => a.name !== 'api');
-                // Clear the radio selection
-                document.querySelectorAll('input[name="api-type"]').forEach(r => r.checked = false);
-                // Reset the price display
                 const priceEl = apiAddonCard.querySelector('.addon-price');
                 if (priceEl) priceEl.textContent = 'Select Type →';
                 updatePriceCalculator();
@@ -808,29 +802,43 @@ if (apiAddonModalConfirm) {
                 return;
             }
             
-            // Check if an API type is selected
-            const selectedApiType = document.querySelector('input[name="api-type"]:checked');
-            if (!selectedApiType) {
-                alert('Please select an API type');
+            // Check if at least one API type is selected
+            if (selectedApiTypes.length === 0) {
+                alert('Please select at least one API type');
                 return;
             }
             
-            const apiType = selectedApiType.value;
-            const price = parseInt(selectedApiType.closest('.api-type-option').dataset.price);
+            // Remove all existing API addons first
+            orderData.addons = orderData.addons.filter(a => a.name !== 'api');
+            
+            // Add all selected APIs
+            let totalPrice = 0;
+            const apiNames = [];
+            selectedApiTypes.forEach(checkbox => {
+                const apiType = checkbox.value;
+                const price = parseInt(checkbox.closest('.api-type-option').dataset.price);
+                totalPrice += price;
+                apiNames.push(apiType.charAt(0).toUpperCase() + apiType.slice(1));
+                
+                orderData.addons.push({ 
+                    name: 'api', 
+                    price: price, 
+                    apiType: apiType.charAt(0).toUpperCase() + apiType.slice(1) + ' API'
+                });
+            });
             
             apiAddonCard.classList.add('selected');
-            apiAddonCard.dataset.price = price;
+            apiAddonCard.dataset.price = totalPrice;
             
             // Update the price display on the card
             const priceEl = apiAddonCard.querySelector('.addon-price');
-            if (priceEl) priceEl.textContent = `+€${price}`;
-            
-            // Store the API type name for summary
-            orderData.addons.push({ 
-                name: 'api', 
-                price: price, 
-                apiType: apiType.charAt(0).toUpperCase() + apiType.slice(1) + ' API'
-            });
+            if (priceEl) {
+                if (selectedApiTypes.length === 1) {
+                    priceEl.textContent = `+€${totalPrice}`;
+                } else {
+                    priceEl.textContent = `${selectedApiTypes.length} APIs (+€${totalPrice})`;
+                }
+            }
             
             updatePriceCalculator();
         }
